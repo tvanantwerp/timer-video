@@ -10,9 +10,21 @@ export const MyComposition = () => {
 		<div
 			style={{
 				backgroundImage: `linear-gradient(${rotation}deg, #051937 0%, #A8EB12 100%)`,
+				display: 'grid',
+				placeItems: 'center',
 				height,
 				width,
 			}}
-		/>
+		>
+			<p
+				style={{
+					color: 'white',
+					fontFamily: 'sans-serif',
+					fontSize: `${height * 0.25}px`,
+				}}
+			>
+				{Math.floor(frame / fps)}
+			</p>
+		</div>
 	);
 };
